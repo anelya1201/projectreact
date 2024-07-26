@@ -1,38 +1,259 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #662E1C;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  gap: 250px;
+}
+
+header a {
+  color: #EBDCB2;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header nav img {
+  width: 60px;
+  height: 60px;
+}
+
+header h1 img {
+  width: 60px;
+  padding-top: 15px;
+}
+
+header h1 {
+  color: #EBDCB2;
+  padding-bottom: 20px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.button {
+  background-color: #C5001A;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 10px;
+  margin-left: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  position: relative;
+  margin-top: 100px;
+}
+
+.block {
+  width: 400px;
+  background-color: #A2766A;
+  border-radius: 5px;
+}
+
+.block img {
+  border-radius: 10px;
+}
+
+.block h4 {
+  color: #FFE3B4;
+}
+
+.avatar {
+  display: flex;
+
+}
+
+.post>img {
+  position: absolute;
+  right: 20px;
+  top: -84px;
+}
+
+.post button {
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.post h5 {
+  padding: 5px;
+}
+
+.block p,
+h5 {
+  color: #EBDCB2;
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.chats button {
+  background: none;
+  border: none;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 350px;
+}
+
+.profile {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.profile img {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.profile h4,
+.profile p {
+  display: flex;
+  margin-left: 135px;
+  position: relative;
+  bottom: 150px;
+  font-size: 20px;
+}
+
+.likes {
+  position: relative;
+  left: 45px;
+  bottom: 34px;
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.follow {
+  border: none;
+  background-color: #2F4858;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.message {
+  border: none;
+  background-color: #2F4858;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.others {
+  border: none;
+  background-color: #2F4858;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.form {
+  width: 400px;
+  height: 180px;
+  background-color: #A2766A;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.in2{
+  margin-top: 10px;
+}
+
+.form h3{
+  display: flex;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form button{
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2F4858;
+  border-radius: 10px;
+  padding: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+footer ul a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer li {
+  list-style: none;
 }
